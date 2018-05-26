@@ -1,3 +1,7 @@
 task hello << {
     println 'executing task hello'
 }
+
+task print (dependsOn: 'hello') {
+    println 'executing task print'
+}
